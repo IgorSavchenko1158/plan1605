@@ -38,7 +38,4 @@ management:
     health:
       show-details: when_authorized
 
-#logging:
-#  level:
-#    root: debug
 

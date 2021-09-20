@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>testplan1605</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>testplan1605</name>
-    <description>testplan1605</description>
+    <name>plan1605</name>
+    <description>plan1605</description>
     <properties>
         <java.version>16</java.version>
         <java-jwt.version>3.18.1</java-jwt.version>

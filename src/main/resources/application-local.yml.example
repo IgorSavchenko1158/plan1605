@@ -1,0 +1,24 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+planner:
+  security:
+    jwt:
+      secret: <secret>
+      access-expire-in: 10m
+      refresh-expire-in: 3d
+    admins:
+      testman:
+        email: <email>
+        password: <password>
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/plan1605_db
+    driver-class-name: org.postgresql.Driver
+    username: <username>
+    password: <password>
+  mail:
+    password: <password>
+    username: <email>

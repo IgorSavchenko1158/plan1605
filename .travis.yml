@@ -1,7 +1,11 @@
 language: java
 jdk:
-  - openjdk16
+- openjdk16
 script:
-  - ./mvnw clean install
+- "./mvnw clean install"
 before_install:
-  - chmod +x mvnw
+- chmod +x mvnw
+deploy:
+  provider: heroku
+  api_key:
+    secure: IhqG738EdecwkwsNzXO4Z7WAgeDfzb5ueacWg5xMDMC1Og/aY8pXGCuwxuv+hYfBoY0MKROZmSaRLt8tVu09YkhIGUM+LU6MZ9QsVTdbU9itvzlC6OngsK7nOFKhjxLWT4dSxMavNaNzXUS/CfLpNMA6o4xYweTXUYsiKRHUzVd9ZmGm1LRcVPc3gFxpF2KRuRRXeG3Rcxf2a35rjBemsMoc31/WMfIiFqnIm74B0fTIDO8Vcuc+SytqbTs7AWMq8fSGONf85EADegj6exwVJJ1QDYWRLYXwstPxqLtC5uD+1R/CepN8WPkfk+wUn1ZLd21fe22xEZsX3dgZV1kLSgsv1Q7J27fbpzeoxv8rxfPZczN8mJtrMmmkixaeT9Fe7Ff4+qLwFW/8ICXIAR1rjEJJECB8Q4DJuZ0UvukyCIacuNgL3QVvXpxIEpPeSLBm0ngLKSr8ggMc5R7v9vRARHA+Ugue6G5kR9nYh/yno4h6putRnh2ootikQHNNwjyVWp+aUCkInn764BNB3ENJa1pxhbTEcSbimXbvSkXNYSICgzbmsc+sImetA9YMpSwU7f3z8+iFVzKNtvhWZg+K8mUhCoDKZ91SQZUatJKK4bqFE5NffwXq0AlhekaKCD0y7W0/Zm8f8l+D16KQy+pxES9tOW/WmopyWgVazXXjnJ4=
